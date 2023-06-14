@@ -1,9 +1,9 @@
 // DARK MODE
 
-// SE DECLARA LA CONSTANTE QUE ES EL ELEMENTO DEL DOM
+// SE DECLARA LA CONSTANTE QUE ES EL ELEMENTO DEL DOM (dOCUMENT OBJECT MODEL) 
 const btnSwitch = document.querySelector("#switch");
 
-// FUNCIÓN DE EVENTO
+// FUNCIÓN DE EVENTO "CLICK"
 btnSwitch.addEventListener("click", () => {
   
   // AL DAR CLICK SE AGREGA O SE QUITA LA CLASE "DARK" AL BODY
