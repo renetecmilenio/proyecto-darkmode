@@ -3,7 +3,11 @@
 // SE DECLARA LA VARIABLE CONSTANTE QUE ES EL ELEMENTO "BOTON" DEL DOM (DOCUMENT OBJECT MODEL)
 const btnSwitch = document.querySelector("#switch");
 
-// FUNCIÓN ESCUCHA DE EVENTO "CLICK" APLICADO AL BOTON MEDIANTE LA VARIABLE CONTANTE QUE SE GUARDÓ
+
+
+// **************** INICIO DE EVENTO CLICK EN EL BOTÓN ***************
+
+// FUNCIÓN ESCUCHA DE EVENTO "CLICK" APLICADO AL BOTON MEDIANTE LA VARIABLE CONSTANTE QUE SE GUARDÓ PREVIAMENTE
 btnSwitch.addEventListener("click", () => {
   /*
   document = el documento en si osea la pagina actual
@@ -31,6 +35,8 @@ setItem = "Método" cuando reciba una clave y un valor, añadirá estos al almac
   }
 
 });
+// **************** FIN DE EVENTO CLICK EN EL BOTÓN ***************
+
 
 /*
   COMO NO ESTA DENTRO DE UN EVENTO Al empezar o actualizar la página esta "CONDICIONAL"  valida si esta establecida la variable "dark-mode" con el valor de "true" en local storage, si la condicion da verdaderA significa que previamente se seleccionó el modo dark y agrega la clase "dark" al body y la clase "active" al botón y si no (else) se la remueven ambas clases a los elementos
