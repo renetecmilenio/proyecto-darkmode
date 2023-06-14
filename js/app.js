@@ -39,7 +39,7 @@ setItem = "Método" cuando reciba una clave y un valor, añadirá estos al almac
 
 
 /*
-  COMO NO ESTA DENTRO DE UN EVENTO Al empezar o actualizar la página esta "CONDICIONAL"  valida si esta establecida la variable "dark-mode" con el valor de "true" en local storage, si la condicion da verdaderA significa que previamente se seleccionó el modo dark y agrega la clase "dark" al body y la clase "active" al botón y si no (else) se la remueven ambas clases a los elementos
+  COMO NO ESTA DENTRO DE UN EVENTO CLICK,  esta condicion se ejecuta Al empezar o actualizar la página y valida si esta establecida la variable "dark-mode" con el valor de "true" en local storage, si la condicion se cumple (es verdadera) significa que previamente se seleccionó el modo dark y agrega la clase "dark" al body y la clase "active" al botón y si no (else) se la remueven ambas clases a los elementos (body y botón)
   */
 if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("dark"); // A DIFERENCIA DEL MÉTODO "TOOGLE" SOLO SE "AGREGA" (NO INTERCAMBIA) LA CLASE "DARK" AL BODY
